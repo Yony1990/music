@@ -1,0 +1,17 @@
+- Die With A Smile - Lady Gaga, Bruno Mars
+- Hymn for the weekend - Coldplay
+- Yellow - Coldplay
+- The Reason - Hoobastank
+- Somewhere Only We Know - Keane
+- Lose Control - Teddy Swims
+- When I was Your Man - Bruno Mars
+- Espresso - Sabrina Carpenter
+- Taste - Sabrina Carpenter
+- Please, Please, Please - Sabrina Carpenter
+- I Don't Want To Miss a Thing - Aerosmith
+
+id
+artista
+src
+img
+title

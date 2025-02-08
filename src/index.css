@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+i{
+    cursor: pointer;
+    user-select: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    box-shadow: 0 0 250px rgba(138, 126, 149, 0.235);
+    border-radius: 25px;
+    position: relative;
+}
+
+.shape {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape-1 {
+    background: radial-gradient(circle at 35px 65px, #9b22ea, #005);
+    filter: blur(20px);
+    left: -65px;
+    top: -65px;
+    z-index: -1;
+}
+
+.shape-2 {
+    background: radial-gradient(circle at 35px 65px, #ea22b1, #111);
+    filter: blur(20px);
+    right: -65px;
+    bottom: -65px;
+    z-index: -1;
+}
+
+.shape-3 {
+    width: 60px;
+    height: 60px;
+    background: #08e2ff;
+    right: 7px;
+    top: 10px;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+main {
+    width: 300px;
+    border-radius: 25px;  
+    overflow: hidden;
+    position: relative;
+    box-shadow: 8px 8px 40px rgba(72, 72, 72, 0.51);
+    backdrop-filter: blur(3px);
+}
+
+main img.blur-img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(12px);
+    opacity: .5;
+    z-index: -1;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #e5e5e5;
+    border-radius: 50px;
+    
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #4277f400;
+    border-radius: 50%;
+    cursor: grabbing;
+    width: 10px;
+    height: 10px;
+}

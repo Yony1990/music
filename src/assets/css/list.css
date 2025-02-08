@@ -1,0 +1,108 @@
+.list {
+    width: 100%;
+    position: absolute;
+    bottom: -60%;
+    left: 0;
+    background: #1c1c1c;
+    color: #e0e0e0;
+    border-top: solid 3px rgba(107, 101, 117, 0.397);
+    border-left: solid 3px rgba(107, 101, 117, 0.397);
+    border-right: solid 3px rgba(107, 101, 117, 0.397);
+    transition: all .4s ease-out;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 0 0px rgba(148, 209, 221, 0);
+    z-index: 10;
+    padding: 0 5px;
+}
+
+.list img.blur-img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(12px) brightness(.3);
+    opacity: .5;
+    z-index: -1;
+}
+
+.list.show {
+    bottom: 0;
+    box-shadow: 0 0 155px rgba(137, 119, 0, 0.54);
+}
+
+.list .header {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list .header i {
+    font-size: 1.7rem;
+}
+
+.list .header > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.list .header > div span {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    color: #f9f9f9;
+}
+
+.list ul {
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+    padding: 0 5px 0 0;
+}
+
+.list ul::-webkit-scrollbar {
+    width: 4px;
+}
+  
+.list ul::-webkit-scrollbar-track {
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: rgba(93, 87, 103, 0.191);
+    border-radius: 100px;
+}
+  
+.list ul::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: rgba(137, 125, 154, 0.374);
+    border-radius: 100px;
+}
+
+.list ul li {
+    border-radius: 25px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.list ul li:hover {
+    background: rgba(93, 87, 103, 0.191);
+}
+
+.list ul li .row p {
+    color: #999;
+    font-size: .85rem;
+}
+
+.list .duration {
+    font-size: .9rem;
+}
+
+.list ul li.playing {
+    background: rgba(137, 125, 154, 0.374);
+}

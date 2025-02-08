@@ -1,0 +1,179 @@
+.card {
+    width: 100%;
+    overflow: hidden;
+    padding: 25px;
+}
+
+.card .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .nav .span-glass {
+    background: #9f9f9f36;
+    backdrop-filter: blur(20px);
+    padding: 0 10px;
+    border-radius: 50px;
+}
+
+/* img */
+
+.card .img {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card .img img {
+    /* width: 200px;
+    height: 200px; */
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.442) ;
+    /* animation: rotate 20s linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused; */
+    user-select: none;
+    z-index: 2;
+}
+
+.card .img img.blur-img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 85%;
+    filter: blur(12px) brightness(.2);
+    opacity: .7;
+}
+
+.card .img img.playing {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* detail */
+
+.card .details {
+    width: 100%;
+    text-align: center;
+}
+
+.card .details .title{
+    font-size: 1.2rem;
+}
+
+.card .details .artist{
+    color: #bbb;
+}
+
+/* progres */
+
+.card .progress {
+    margin-top: 15px;
+}
+
+.card .progress input {
+    width: 100%;
+    height: 6px;
+    cursor: grab;
+}
+
+
+/* timer */
+
+.card .timer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+/* controls */
+ 
+.card .controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card .controls #prev,
+.card .controls #next {
+    font-size: 2rem;
+}
+
+.card .controls .repeatIcon, .card .controls .volumeIcon {
+    font-size: 1rem;
+}
+
+.card .controls .play {
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(#be99ce5a 0%, #ad99c662 100% );
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card .controls .play::before {
+    content: "";
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: inherit;
+    background: linear-gradient(#fce2ff27, #5b466789 100% );
+}
+
+.card .controls .play i {
+    background-clip: text;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+}
+
+.card .controls .volume {
+    width: 93.5%;
+    height: 40px;
+    margin: 0 10px;
+    background: #9f9f9f21;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 5;
+    transition: bottom .2s linear;
+    gap: 8px;
+}
+
+.card .controls .volume.show {
+    bottom: 10px;
+}
+
+.card .controls .volume input {
+    width: 100%;
+    height: 6px;
+    cursor: grab;
+}
+
