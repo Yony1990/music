@@ -173,18 +173,22 @@ const Card = ({props: { musicNumber, setMusicNumber, setOpen, open }}) => {
         </i>
 
         {/* volume */}
-        <i className="material-icons volumeIcon" onClick={() => setShowVolume(prev => !prev)} >
+       
+          <i className="material-icons volumeIcon" onClick={() => setShowVolume(prev => !prev)} >
               volume_up
-        </i>
-
-        <div className={`volume ${showVolume ? 'show' : '' }`}>
-          <i className="material-icons" onClick={() => setVolume(v => v > 0 ? 0 : 100)}>
-              { volume === 0 ? 'volume_off' : 'volume_up'}
           </i>
-          <input type="range" min={0} max={100} value={volume} onChange={e => setVolume(Number(e.target.value))} style={{
-            background: `linear-gradient(to right, rgb(137, 125, 154) ${volume}%, #e5e5e5 ${volume}%)`
-          }} />
-          <span>{volume}</span>
+       
+        
+        <div className="volume-content">
+          <div className={`volume ${showVolume ? 'show' : '' }`}>
+            <i className="material-icons" onClick={() => setVolume(v => v > 0 ? 0 : 100)}>
+                { volume === 0 ? 'volume_off' : 'volume_up'}
+            </i>
+            <input type="range" min={0} max={100} value={volume} onChange={e => setVolume(Number(e.target.value))} style={{
+              background: `linear-gradient(to right, rgb(137, 125, 154) ${volume}%, #e5e5e5 ${volume}%)`
+            }} />
+            <span>{volume}</span>
+          </div> 
         </div>
 
       </div>

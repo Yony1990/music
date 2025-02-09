@@ -15,6 +15,10 @@
     backdrop-filter: blur(20px);
     padding: 0 10px;
     border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* img */
@@ -81,6 +85,7 @@
 
 .card .progress {
     margin-top: 15px;
+    z-index: 2;
 }
 
 .card .progress input {
@@ -123,12 +128,17 @@
 .card .controls .play {
     width: 3rem;
     height: 3rem;
-    background: linear-gradient(#be99ce5a 0%, #ad99c662 100% );
+    background: linear-gradient(#ffffff5a 0%, #ffffff62 100% );
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: all 1s ease;
+}
+
+.card .controls .play:hover {
+    background: linear-gradient(#be99ce5a 0%, #ad99c662 100% );
 }
 
 .card .controls .play::before {
@@ -137,7 +147,8 @@
     width: 2.4rem;
     height: 2.4rem;
     border-radius: inherit;
-    background: linear-gradient(#fce2ff27, #5b466789 100% );
+    background: linear-gradient(#ffffff27, #5b466789 100% );
+    transition: all 1s ease;
 }
 
 .card .controls .play i {
@@ -148,14 +159,25 @@
     position: absolute;
 }
 
-.card .controls .volume {
-    width: 93.5%;
+.card .controls .volume-content {
+    position: absolute;
+    width: 100%;
     height: 40px;
-    margin: 0 10px;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+
+}
+
+.card .controls .volume {
+    width: 100%;
+    height: 40px;
+    cursor: grab;
+    margin: 0;
     background: #9f9f9f21;
     backdrop-filter: blur(20px);
-    position: absolute;
-    bottom: -10%;
+    position: relative;
+    bottom: -40px;
     left: 0;
     border-radius: 50px;
     display: flex;
@@ -177,3 +199,227 @@
     cursor: grab;
 }
 
+/* tables */
+
+@media (max-width: 850px) {
+    .card {
+        padding: 55px;
+    }
+    .card .nav i {
+        font-size: 2rem;
+    }
+    .card .img {
+        height: 350px;
+        margin-top: 1vh;
+    }
+    .card .details {
+        margin-top: 1vh;
+    }
+    .card .details .title{
+        font-size: 2rem;
+    }
+    
+    .card .details .artist{
+        margin-top: 10px;
+    }
+    
+    /* progres */
+    
+    .card .progress {
+        margin-top: 5vh;
+    }
+    
+    .card .progress input {
+        height: 8px;
+    }
+
+        
+    /* controls */
+    
+    .card .controls {
+        margin-top: 5vh;
+        padding: 0 50px;
+    }
+
+    .card .controls #prev,
+    .card .controls #next {
+        font-size: 3rem;
+    }
+
+    .card .controls .repeatIcon, .card .controls .volumeIcon {
+        font-size: 2rem;
+    }
+
+    .card .controls .play {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .card .controls .play::before {
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+
+    .card .controls .play i {
+        font-size: 2.5rem;
+    }
+
+    .card .controls .volume-content {
+        height: 0px;
+        padding: 0 100px;
+    }
+    
+    .card .controls .volume { 
+        height: 60px;
+        bottom: -120px;
+    }
+
+    .card .controls .volume.show {
+        bottom: 10vh;
+    }
+
+    .card .controls .volume input {
+        height: 8px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .card {
+        padding: 25px;
+    }
+
+    .card .details {
+        margin-top: 3vh;
+    }
+
+    .card .details .title{
+        font-size: 1.5rem;
+    }
+    
+    .card .details .artist{
+        margin-top: 0px;
+    }
+
+    /* progres */
+
+    .card .progress {
+        margin-top: 7vh;
+    }
+    
+    .card .progress input {
+        height: 8px;
+    }
+
+       
+    /* controls */
+    
+    .card .controls {
+        margin-top: 2vh;
+        padding: 0 10px;
+    }
+
+    .card .controls #prev,
+    .card .controls #next {
+        font-size: 2rem;
+    }
+
+    .card .controls .repeatIcon, .card .controls .volumeIcon {
+        font-size: 1.2rem;
+    }
+
+    .card .controls .play {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .card .controls .play::before {
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+
+    .card .controls .volume-content {
+        padding: 0 10px;
+    }
+    
+    .card .controls .volume { 
+        height: 50px;
+        bottom: -120px;
+    }
+
+    .card .controls .volume.show {
+        bottom: 8vh;
+    }
+
+    .card .controls .volume input {
+        height: 6px;
+    }
+    
+}
+
+@media (max-height: 700px) and (max-width: 550px) {
+
+    .card .details {
+        margin-top: 0vh;
+    }
+
+    /* progres */
+
+    .card .progress {
+        margin-top: 2vh;
+    }
+ 
+    /* controls */
+
+    .card .controls .volume { 
+        height: 50px;
+        bottom: -120px;
+    }
+
+    .card .controls .volume.show {
+        bottom: 9vh;
+    }
+
+    .card .controls .volume input {
+        height: 6px;
+    }
+}
+
+@media (min-height: 1000px) and (max-width: 850px) {
+
+    .card .img {
+        height: 500px;
+        margin-top: 50px;
+    }
+    .card .details {
+        margin-top: 50px;
+    }
+    
+    .card .details .artist{
+        margin-top: 10px;
+    }
+    
+    /* progres */
+    
+    .card .progress {
+        margin-top: 50px;
+    }
+
+    /* controls */
+    
+    .card .controls {
+        margin-top: 50px;
+        padding: 0 50px;
+    }
+
+    .card .controls .play {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .card .controls .volume-content {
+        padding: 0 100px;
+    }
+    
+    
+}

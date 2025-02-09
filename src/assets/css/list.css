@@ -5,9 +5,9 @@
     left: 0;
     background: #1c1c1c;
     color: #e0e0e0;
-    border-top: solid 3px rgba(107, 101, 117, 0.397);
-    border-left: solid 3px rgba(107, 101, 117, 0.397);
-    border-right: solid 3px rgba(107, 101, 117, 0.397);
+    border-top: solid 3px rgba(116, 117, 101, 0.57);
+    border-left: solid 3px rgba(116, 117, 101, 0.57);
+    border-right: solid 3px rgba(116, 117, 101, 0.57);
     transition: all .4s ease-out;
     border-radius: 25px 25px 0 0;
     box-shadow: 0 0 0px rgba(148, 209, 221, 0);
@@ -69,13 +69,13 @@
     cursor: pointer;
     margin-top: 0px;
     margin-bottom: 20px;
-    background-color: rgba(93, 87, 103, 0.191);
+    background-color: rgba(116, 117, 101, 0.09);
     border-radius: 100px;
 }
   
 .list ul::-webkit-scrollbar-thumb {
     cursor: pointer;
-    background: rgba(137, 125, 154, 0.374);
+    background: rgba(116, 117, 101, 0.57);
     border-radius: 100px;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .list ul li:hover {
-    background: rgba(93, 87, 103, 0.191);
+    background: rgba(116, 117, 101, 0.09);
 }
 
 .list ul li .row p {
@@ -104,5 +104,50 @@
 }
 
 .list ul li.playing {
-    background: rgba(137, 125, 154, 0.374);
+    background: rgba(116, 117, 101, 0.57);
 }
+
+@media (max-width: 850px) {
+    .list {
+        bottom: -100%;
+        border-top: solid 5px rgba(116, 117, 101, 0.57);
+        border-left: solid 5px rgba(116, 117, 101, 0.57);
+        border-right: solid 5px rgba(116, 117, 101, 0.57)
+    }
+    
+    .list .header {
+        height: 80px;
+        padding: 15px 40px;
+    }
+    
+    .list .header i {
+        font-size: 2rem;
+    }
+    
+    .list .header > div span {
+        font-size: 1.3rem;
+    }
+    
+    .list ul {
+        height: 450px;
+        padding: 0 20px;
+    }
+    
+    .list ul::-webkit-scrollbar {
+        width: 0px;
+    }
+    
+    .list ul li {
+        font-size: 1.3rem;
+    }
+
+    .list ul li .row p {
+        font-size: 1rem;
+    }
+    
+    .list .duration {
+        font-size: 1.1rem;
+    }
+
+}
+
