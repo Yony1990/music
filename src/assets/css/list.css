@@ -129,7 +129,7 @@
     }
     
     .list ul {
-        height: 460px;
+        height: 450px;
         padding: 0 20px;
     }
     
@@ -157,7 +157,7 @@
         padding: 15px 20px;
     }
     .list ul {
-        height: 250px;
+        height: 270px;
         padding: 0 5px;
     }
 }
