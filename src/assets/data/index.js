@@ -1,5 +1,12 @@
 const Data = [
     {
+      id: 7,
+      title: 'When I was Your Man',
+      artist: 'Bruno Mars',
+      thumbnail: ('https://applauss.com/wp-content/uploads/2017/05/Bruno-Mars-canciones-escritas.jpg'),
+      src: require('../musics/When-I-Was-Your-Man.mp3')
+    },
+    {
       id: 1,
       title: 'Die With A Smile',
       artist: 'Lady Gaga and Bruno Mars',
@@ -40,13 +47,6 @@ const Data = [
       artist: 'Teddy Swims',
       thumbnail: ('https://akamai.sscdn.co/letras/360x360/albuns/9/1/7/5/2135131709211096.jpg'),
       src: require('../musics/Lose-Control.mp3')
-    },
-    {
-      id: 7,
-      title: 'When I was Your Man',
-      artist: 'Bruno Mars',
-      thumbnail: ('https://applauss.com/wp-content/uploads/2017/05/Bruno-Mars-canciones-escritas.jpg'),
-      src: require('../musics/When-I-Was-Your-Man.mp3')
     },
     {
       id: 8,

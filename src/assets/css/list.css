@@ -107,7 +107,7 @@
     background: rgba(116, 117, 101, 0.57);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 550px) {
     .list {
         bottom: -100%;
         border-top: solid 5px rgba(116, 117, 101, 0.57);
@@ -129,7 +129,7 @@
     }
     
     .list ul {
-        height: 450px;
+        height: 460px;
         padding: 0 20px;
     }
     
