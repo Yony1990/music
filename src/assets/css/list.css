@@ -151,3 +151,13 @@
 
 }
 
+@media (max-width: 550px) {
+    .list .header {
+        height: 80px;
+        padding: 15px 20px;
+    }
+    .list ul {
+        height: 250px;
+        padding: 0 5px;
+    }
+}
