@@ -284,6 +284,8 @@
     
 }
 
+/* cell */
+
 @media (max-width: 550px) {
     .card {
         padding: 25px;
@@ -348,7 +350,7 @@
     }
 
     .card .controls .volume.show {
-        bottom: 8vh;
+        bottom: 14vh;
     }
 
     .card .controls .volume input {
@@ -377,11 +379,23 @@
     }
 
     .card .controls .volume.show {
-        bottom: 9vh;
+        bottom: 22vh;
     }
 
     .card .controls .volume input {
         height: 6px;
+    }
+}
+
+@media (max-height: 680px) and (max-width: 550px) {
+    .card .controls .volume.show {
+        bottom: 9vh;
+    }
+}
+
+@media (max-height: 660px) and (max-width: 550px) {
+    .card .controls .volume.show {
+        bottom: 22vh;
     }
 }
 
