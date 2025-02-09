@@ -114,4 +114,16 @@ input[type="range"]::-webkit-slider-thumb {
         height: 100vh;
         border-radius: 0;
     }
+    .shape-3 {
+        right: 40px;
+        top: 35px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .shape-3 {
+        right: 7px;
+        top: 10px;
+    }
 }
