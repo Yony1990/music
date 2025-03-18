@@ -1,10 +1,10 @@
 const Data = [
     {
-      id: 7,
-      title: 'When I was Your Man',
-      artist: 'Bruno Mars',
-      thumbnail: ('https://applauss.com/wp-content/uploads/2017/05/Bruno-Mars-canciones-escritas.jpg'),
-      src: require('../musics/When-I-Was-Your-Man.mp3')
+      id: 8,
+      title: 'Espresso',
+      artist: 'Sabrina Carpenter',
+      thumbnail: ('https://imgcdn.stablediffusionweb.com/2024/11/18/a0f202c5-f793-45ee-8c6d-3ae0365c5317.jpg'),
+      src: require('../musics/Espresso.mp3')
     },
     {
       id: 1,
@@ -49,12 +49,13 @@ const Data = [
       src: require('../musics/Lose-Control.mp3')
     },
     {
-      id: 8,
-      title: 'Espresso',
-      artist: 'Sabrina Carpenter',
-      thumbnail: ('https://imgcdn.stablediffusionweb.com/2024/11/18/a0f202c5-f793-45ee-8c6d-3ae0365c5317.jpg'),
-      src: require('../musics/Espresso.mp3')
+      id: 7,
+      title: 'When I was Your Man',
+      artist: 'Bruno Mars',
+      thumbnail: ('https://applauss.com/wp-content/uploads/2017/05/Bruno-Mars-canciones-escritas.jpg'),
+      src: require('../musics/When-I-Was-Your-Man.mp3')
     },
+    
     {
       id: 9,
       title: 'Taste',
