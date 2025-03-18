@@ -9,7 +9,7 @@ const Card = ({props: { musicNumber, setMusicNumber, setOpen, open }}) => {
   const [duration, setDuration] = useState(1)
   const [currenTime, setCurrenTime] = useState(0)
   const [play, setPlay] = useState(false)
-  const [showVolume, setShowVolume] = useState(false)
+  const [showVolume, setShowVolume] = useState(true)
   const [volume, setVolume] = useState(50)
   const [repeat, setRepeat] = useState('repeat')
 
